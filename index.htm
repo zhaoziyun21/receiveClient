@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="index_files/css.css">
+<title>抵押贷款</title>
+<script charset="utf-8" src="index_files/lxb.js"></script><script src="index_files/hm.js"></script><script src="index_files/jquery-1.js"></script>
+<script src="index_files/index_js.js"></script>
+<script type="text/javascript" src="index_files/Barrett.js"></script>
+<script type="text/javascript" src="index_files/BigInt.js"></script>
+<script type="text/javascript" src="index_files/RSA.js"></script>
+<!--<script type="text/javascript" src="index_files/Jkey_dy.js"></script>-->
+<script language="javascript" src="index_files/LsJS.js"></script>
+<link href="index_files/JS5.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="index_files/CdCheck.js"></script>
+<script type="text/javascript" charset="utf-8" src="index.js"></script>
+</head>
+<body onLoad="createCode()">
+<div id="LRdiv0" style="display:none;"></div>
+<div id="LRdiv1" style="display:none;"></div>
+<style type="text/css">
+        .code {
+            /*background: #fff url(code_bg.jpg);*/
+            font-family: Arial;
+            font-style: italic;
+            color: #FF4500;
+            font-size: 26px;
+            border: 0;
+            letter-spacing: 3px;
+            font-weight: bolder;
+            float: right;
+            cursor: pointer;
+            width: 126px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+<div class="con">
+  <header class="title">
+    <div class="tit_con">
+      <ul class="tit_ul">
+        <li><img src="index_files/logo.jpg"></li>
+        <li><img src="index_files/biaoy.jpg"></li>
+      </ul>
+      <div><a href="tel:18515102262"><img src="index_files/phone.jpg"></a></div>
+    </div>
+  </header>
+  <div class="con1"> <img src="index_files/con1_bg.jpg" style="display:block"> </div>
+  <div class="con2">
+    <div class="con2_c">
+      <form method="post" id="clientForm">
+        <div class="con2_cimg"><img src="index_files/con2_t.jpg"></div>
+        <ul class="con2_form">
+          <li>
+            <input type="text" id="clientName" name="clientName" value="您的姓名" onFocus="this.value = ''" onBlur="if (this.value == '') { this.value = '您的姓名' }">
+          </li>
+          <li>
+            <input type="text" id="clientTel" name="clientTel" value="联系方式" onFocus="this.value = ''" onBlur="if (this.value == '') { this.value = '联系方式' }">
+          </li>
+          <li>
+            <input type="text" id="applyAmount" name="applyAmount" value="申请额度（万元）" onFocus="this.value = ''" onBlur="if (this.value == '') { this.value = '申请额度（万元）' }">
+          </li>
+          <li>
+            <input type="text" id="inputCode" name="inputCode" maxlength="6" style="width:116px;" placeholder="请输入验证码" datatype="n" errormsg="请输入验证码" nullmsg="请输入验证码！">
+            <div class="code" id="checkCode" onclick="createCode()">fiJdgI</div>
+          </li>
+        </ul>
+        <div class="con2_btn">
+          <button class="submit" id="clientSubmit" type="button"></button>
+        </div>
+      </form>
+    </div>
+    <div style="width:100%; height:30px; float:left;"> &nbsp; </div>
+  </div>
+  <div class="con3"> <img src="index_files/con3_bg.jpg" style="display:block"> </div>
+  <div class="con3_c">
+    <ul class="con3_ul">
+      <li> &nbsp;&nbsp;<span>额度高<br>
+        </span> &nbsp;&nbsp;最高可贷5000万 </li>
+      <li> <span>利息低<br>
+        </span> 月息低至0.37% </li>
+      <li> <span>期限长<br>
+        </span> 最长可贷20年 </li>
+    </ul>
+  </div>
+  <div class="con6"> <img src="index_files/con4_bg.jpg" style="display:block"> </div>
+  <div style="width: 100%;height: auto; float: left; margin-bottom: 50px; text-align:center; background:#f9f1ee; font-family:'微软雅黑'; padding-top:30px; font-size:12px; color:#333; padding-bottom:30px; line-height:20px"> <br>
+    京ICP备05076337号-1
+    京公网备案110105014833<br>
+    放款资金由银行等其他正规持牌机构提供,<br>
+    具体放款时间、金额因个人情况而不同.<br>
+    市场有风险，选择需谨慎 </div>
+  <div class="con5">
+    <ul class="con5_ul">
+      <li><a href="http://zxsystem.ihouze.com/lr/chatpre.aspx?id=mpa37392877&amp;lng=cn&amp;e=%e6%89%8b%e6%9c%ba%e7%89%88%e5%ae%98%e7%bd%91%e5%92%a8%e8%af%a2%e6%8c%89%e9%92%ae&amp;r=&amp;rf1=&amp;rf2=&amp;p=http%3A//www.ihouze.com/Applybd/Mortgage.html%3Ff%3Dtsg6%26id%3Dsm9978&amp;cid=1569310651987678573801&amp;sid=1569310651987678573801">在线咨询</a></li>
+      <li><a href="tel:18515102262"><img src="index_files/tel.jpg" style="display:block"></a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="LRdiv3" style="display: block;">
+  <div id="LRfloater3" style="z-index: 2147483647; position: fixed !important; right: 0px; bottom: 0px;">
+    <div id="LRMINIBar" class="LR_Mini_ICON" style="display:none;right: 15px;bottom: 30px;" onClick="lrminiMax();"><a class="LR-BTN" style="background-color: #5ba4ed;"><span class="LR-ICON LR-ICON-CHAT1" id="LR-BTN-ICON"></span><span id="LR-CIRCLE" style="display:none;background-color: #5ba4ed;"></span> </a>
+      <div id="LR-BUBBLE" style="display:none;width:400px;right: 0;margin-right:34px;cursor:pointer;bottom: 30px;"><span class="LR-ICON" id="LR-BUBBLE-CLOSE" onClick="return closebarhtml(event);"></span>
+        <div id="LR-BUBBLE-INSIDE">
+          <div id="LR-BUBBLE-title"><img id="LR-BUBBLE-AVATAR" src=""><span id="LR-BUBBLE-NAME"></span></div>
+          <div id="LR-BUBBLE-MSG"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
