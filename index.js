@@ -51,7 +51,7 @@ $(document).ready(function(){
             type: "post",
             contentType:"application/json",
             dataType:"json",
-            url: "http://localhost:8110/receiveClient/saveClient.ajax",
+            url: "http://47.98.172.145:8110/receiveClient/saveClient.ajax",
             data: JSON.stringify(jsonData),
             success: function(data){
                 if(data.code == 200){
